@@ -5,5 +5,5 @@ package firstAlgs;
  */
 public class Test {
 
-    
+
 }
