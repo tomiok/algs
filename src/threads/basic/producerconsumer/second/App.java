@@ -11,7 +11,7 @@ public class App {
     static Processor processor = new Processor();
 
 
-    public static void main(final String[] args) {
+    public static void main(final String[] args) throws InterruptedException {
 
         final Runnable r1 = () -> {
             try {
@@ -35,6 +35,9 @@ public class App {
 
         t1.start();
         t2.start();
+
+        t1.join();
+        t2.join();
     }
 }
 
