@@ -2,7 +2,6 @@ package wildcards.bounded;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -22,7 +21,7 @@ public class Client {
         c.addRectangle(new ArrayList<>(shapes), new Rectangle(5L, 6L, 9L, 10L));
 
         c.drawAll(shapes);
-        Collections.shuffle();
+        // Collections.shuffle();
     }
 
     // void aMethod(List⟨? extends Number⟩ list) {...}

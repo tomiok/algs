@@ -1,6 +1,7 @@
 package j2se8.sample.lambdas;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -22,5 +23,7 @@ public class FruitsComparables {
         System.out.println();
 
         fruits.stream().sorted(String::compareToIgnoreCase).forEach(System.out::println);
+
+        fruits.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
     }
 }
