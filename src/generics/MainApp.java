@@ -18,10 +18,9 @@ public class MainApp {
     }
 
     /**
-     *
-     * @param list with the fahter class, in this case is  #Construction
+     * @param list         with the fahter class, in this case is  #Construction
      * @param construction
-     * @param <T> a varArgs with classes extending Construction.
+     * @param <T>          a varArgs with classes extending Construction.
      * @see Construction
      */
     private static <T extends Construction> void addConstructions(final List<T> list, final T... construction) {
